@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width",initial-scale=1.0>
+        <title>Trending Bikes</title>
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+ <body>
+    <div class="container1" id="bike">
+        <nav>
+         <img src="relogo.jpg" class="logo" width="100" height="100" >
+         <a href="re350.html" class="btn">Test Drive</a>
+        </nav>
+        <div class="content1">
+           <img src="re.jpg">
+            <p>The has managed to build its separate legacy in India.
+                The Meteor 350 stands out as a status symbol and commands a strong road presence.
+                 Due to this, the buyer of this bike doesn't even look at its competitors in the market. 
+             </p><br><br>
+             <h3>Choose your colour </h3>
+             <div class="color-select">
+                <div id="red"></div>
+                <div id="black"></div>
+                <div id="blue"></div>
+             </div>
+        </div> 
+    </div>
+    <script>
+     let redbtn=document.getElementById("red")
+     let blackbtn=document.getElementById("black")
+     let bluebtn=document.getElementById("blue")
+      redbtn.onclick = function()
+     {
+        bike.style.backgroundImage="url(rered.png)"
+     }
+      blackbtn.onclick = function()
+     {
+        bike.style.backgroundImage= "url(reblack.png)"
+     }
+     bluebtn.onclick = function()
+     {
+        bike.style.backgroundImage= "url(reblue.png)"
+     }
+    </script>
+ </body>
+
+</html>

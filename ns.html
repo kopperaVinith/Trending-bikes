@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width",initial-scale=1.0>
+        <title>Trending Bikes</title>
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+ <body>
+    <div class="container" id="bike">
+        <nav>
+         <img src="bajaj.png" class="logo" width="100" height="100">
+         <a href="ns200.html" class="btn">Test Drive</a>
+        </nav>
+        <div class="content">
+           <img src="nslogo.jpg">
+            <p style="font-size:15px;">The strength of the NS 200 is in its lightness and agility.The Bike not
+                only delievers fun in the big-city tumult,but also when you are redefining
+                the city limits when changing corners quickly.
+             </p>
+             <h3>Choose your colour </h3>
+             <div class="color-select">
+                <div id="red"></div>
+                <div id="blue"></div>
+                <div id="grey"></div>
+             </div>
+        </div> 
+    </div>
+    <script>
+     let redbtn=document.getElementById("red")
+     let bluebtn=document.getElementById("blue")
+     let greybtn=document.getElementById("grey")
+      redbtn.onclick = function()
+     {
+        bike.style.backgroundImage="url(nsred.png)"
+     }
+     bluebtn.onclick = function()
+     {
+        bike.style.backgroundImage= "url(nsblue.png)"
+     }
+     greybtn.onclick = function()
+     {
+        bike.style.backgroundImage= "url(nsgrey.png)"
+     }
+    </script>
+ </body>
+
+</html>

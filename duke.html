@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width",initial-scale=1.0>
+        <title>Trending Bikes</title>
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+ <body>
+    <div class="container3" id="bike">
+        <nav>
+         <img src="dukelogo.png" class="logo" width="150" height="150">
+         <a href="duke390.html" class="btn">Test Drive</a>
+        </nav>
+        <div class="content">
+           <img src="duke390.png">
+            <p style="font-size:15px;">The KTM 390 Duke was the first motorcycle to pack the 373.2cc engine. 
+                The engine had one of the most aggressive  power deliveries in the first-gen 
+                model launched back in 2013, making it an ideal corner-carving tool for enthusiasts.
+             </p>
+             <h3>Choose your colour </h3>
+             <div class="color-select">
+                <div id="black"></div>
+                <div id="blue"></div>
+                <div id="grey"></div>
+             </div>
+        </div> 
+    </div>
+    <script>
+     let blackbtn=document.getElementById("black")
+     let bluebtn=document.getElementById("blue")
+     let greybtn=document.getElementById("grey")
+     blackbtn.onclick = function()
+     {
+        bike.style.backgroundImage="url(dukeblack.png)"
+     }
+     bluebtn.onclick = function()
+     {
+        bike.style.backgroundImage= "url(dukeblue.png)"
+     }
+      greybtn.onclick = function()
+     {
+        bike.style.backgroundImage= "url(dukesilver.png)"
+     }
+    </script>
+ </body>
+
+</html>

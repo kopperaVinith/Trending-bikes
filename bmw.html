@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width",initial-scale=1.0>
+        <title>Trending Bikes</title>
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+ <body>
+    <div class="container4" id="bike">
+        <nav>
+         <img src="bmwlogo.png" class="logo" width="100" height="100">
+         <a href="bmw310.html" class="btn">Test Drive</a>
+        </nav>
+        <div class="content">
+           <img src="bmw310.png">
+            <p style="font-size:15px;">The BMW G 310 R is an entry-level standard motorcycle developed jointly by
+                 BMW and TVS Motor Company of India.
+                 It is BMW's first, modern, low-end, sub-500 cc, beginner motorcycle sold under the BMW Motorrad brand.
+             </p>
+             <h3>Choose your colour </h3>
+             <div class="color-select">
+                <div id="black"></div>
+                <div id="red"></div>
+                <div id="blue"></div>
+             </div>
+        </div> 
+    </div>
+    <script>
+     let blackbtn=document.getElementById("black")
+     let redbtn=document.getElementById("red")
+     let bluebtn=document.getElementById("blue")
+     blackbtn.onclick = function()
+     {
+        bike.style.backgroundImage="url(bmwblack.png)"
+     }
+     redbtn.onclick = function()
+     {
+        bike.style.backgroundImage= "url(bmwred.png)"
+     }
+     bluebtn.onclick = function()
+     {
+        bike.style.backgroundImage= "url(bmwblue.png)"
+     }
+    </script>
+ </body>
+
+</html>
