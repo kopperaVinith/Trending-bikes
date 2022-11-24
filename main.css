@@ -65,6 +65,9 @@ nav .btn{
 .color-select #blue{
     background:blue;
 }
+.color-select #orange{
+    background:orangered;
+}
 
 .color-select #grey{
     background:grey;
